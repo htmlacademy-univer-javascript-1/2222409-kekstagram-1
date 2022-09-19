@@ -5,7 +5,7 @@ const GetRandomNumber = function (lowerLimit, upperLimit) {
   return 'Введите положительные значения.';
 };
 
-// console.log(GetRandomNumber(10, 120));
+GetRandomNumber(10, 120);
 
 const CheckStringLength = function (testString, maxLength) {
   if (testString.length < maxLength) {
@@ -14,4 +14,4 @@ const CheckStringLength = function (testString, maxLength) {
   return 'Длина строки не соответствует критериям.';
 };
 
-// CheckStringLength('Запомни Меня [Каво? Деда]', 120);
+CheckStringLength('Запомни Меня [Каво? Деда]', 120);
