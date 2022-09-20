@@ -8,10 +8,7 @@ const getRandomNumber = function (lowerLimit, upperLimit) {
 getRandomNumber(10, 120);
 
 const checkStringLength = function (testString, maxLength) {
-  if (testString.length <= maxLength) {
-    return 'Длина строки соответствует критериям.';
-  }
-  return 'Длина строки не соответствует критериям.';
+  return testString.length <= maxLength;
 };
 
 checkStringLength('Запомни Меня [Каво? Деда]', 120);
