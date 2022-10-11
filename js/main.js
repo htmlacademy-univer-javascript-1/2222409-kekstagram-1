@@ -1,9 +1,12 @@
 const getRandomNumber = function (lowerLimit, upperLimit) {
   if (lowerLimit >= 0 && upperLimit >= lowerLimit) {
+
     return Math.floor(Math.random() * (upperLimit - lowerLimit + 1) + lowerLimit);
+
   }
   return 'Введите положительные значения.';
 };
+
 
 const getRandomArrayIndex = function (index) {
   return index[getRandomNumber(0, index.length - 1)];
@@ -41,5 +44,3 @@ for (let i = 1; i <= PHOTO_COUNT; i++) {
     }]
   });
 }
-
-
