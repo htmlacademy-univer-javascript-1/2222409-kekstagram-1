@@ -1,1 +1,3 @@
-import './create-photo-description.js';
+import {getRandomPeople} from './data.js';
+
+getRandomPeople();
