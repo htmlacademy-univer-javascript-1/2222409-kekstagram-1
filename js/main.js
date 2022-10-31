@@ -1,3 +1,3 @@
-import {getRandomPeople} from './data.js';
+import {getRandomUser} from './data.js';
 
-getRandomPeople();
+getRandomUser();
