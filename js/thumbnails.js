@@ -1,4 +1,4 @@
-import {getRandomUser} from './data.js';
+import {getRandomUserPhotos} from './data.js';
 
 const renderThumbnails = function () {
   const photosTemplate = document.querySelector('#picture').
@@ -7,7 +7,7 @@ const renderThumbnails = function () {
 
   const photosContainer = document.querySelector('.pictures');
   const containerFragment = document.createDocumentFragment();
-  const createPhotos = getRandomUser();
+  const createPhotos = getRandomUserPhotos();
 
   createPhotos.forEach(({url, likes, comments}) => {
     const photos = photosTemplate.cloneNode(true);

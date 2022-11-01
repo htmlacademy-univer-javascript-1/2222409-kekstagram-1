@@ -57,7 +57,7 @@ const getRandomPhoto = function () {
   return user;
 };
 
-const getRandomUser = function () {
+const getRandomUserPhotos = function () {
   const userPhotos = [];
   for (let i = 0; i < PHOTO_COUNT; i++) {
     userPhotos[i] = getRandomPhoto();
@@ -65,4 +65,4 @@ const getRandomUser = function () {
   return userPhotos;
 };
 
-export{getRandomUser, getRandomComment, getRandomPhoto};
+export{getRandomUserPhotos, getRandomComment, getRandomPhoto};
