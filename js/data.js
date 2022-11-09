@@ -2,7 +2,7 @@ import {getRandomNumber, getRandomArrayIndex, getNumbersArray, getRandomDifferen
 
 const RANDOM_AVATAR = getRandomNumber(1, 6);
 
-const ID_COMMENT = getNumbersArray(100);
+const ID_COMMENTS = getNumbersArray(100);
 const ID_PHOTOS = getNumbersArray(25);
 const ID_USERS = getNumbersArray(25);
 
@@ -38,7 +38,7 @@ const PHOTO_COUNT = 25;
 
 const getRandomComment = function () {
   const comment = {
-    id: getRandomDifferentNumber(ID_COMMENT),
+    id: getRandomDifferentNumber(ID_COMMENTS),
     avatar: `img/avatar-${RANDOM_AVATAR}.svg`,
     message: getRandomArrayIndex(COMMENTS),
     name: getRandomArrayIndex(NAMES)
@@ -57,7 +57,7 @@ const getRandomPhoto = function () {
   return user;
 };
 
-const getRandomUser = function () {
+const getRandomUserPhotos = function () {
   const userPhotos = [];
   for (let i = 0; i < PHOTO_COUNT; i++) {
     userPhotos[i] = getRandomPhoto();
@@ -65,4 +65,4 @@ const getRandomUser = function () {
   return userPhotos;
 };
 
-export{getRandomUser, getRandomComment, getRandomPhoto};
+export{getRandomUserPhotos, getRandomComment, getRandomPhoto};
