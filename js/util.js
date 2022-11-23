@@ -9,6 +9,10 @@ const getRandomArrayIndex = function (index) {
   return index[getRandomNumber(0, index.length - 1)];
 };
 
+function checkLength(str, maxLength) {
+  return str.length <= maxLength;
+}
+
 const getRandomDifferentNumber = function (array) {
   const randomIndex = getRandomNumber(0, array.length - 1);
   if (array[randomIndex] === '') {
@@ -28,4 +32,8 @@ const getNumbersArray = function (amount) {
   return numbersArray;
 };
 
-export {getRandomArrayIndex, getRandomNumber, getRandomDifferentNumber, getNumbersArray};
+const isEscapeKey = (evt) => evt.key === 'Escape';
+
+const isEnterKey = (evt) => evt.key === 'Enter';
+
+export {getRandomArrayIndex, getRandomNumber, checkLength, getRandomDifferentNumber, getNumbersArray, isEscapeKey, isEnterKey};
