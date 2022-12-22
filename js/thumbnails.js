@@ -1,5 +1,5 @@
 import {getRandomUserPhotos} from './data.js';
-import {createBigPicture} from './big-picture.js';
+import {showBigPicture} from './big-picture.js';
 
 const renderThumbnails = function () {
   const photosTemplate = document.querySelector('#picture').
@@ -18,7 +18,7 @@ const renderThumbnails = function () {
     containerFragment.appendChild(photos);
 
     photos.addEventListener('click', () => {
-      createBigPicture({url, likes, comments});
+      showBigPicture({url, likes, comments});
     });
   });
 
